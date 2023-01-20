@@ -40,19 +40,21 @@ export default function Home () {
           </div>
           <ul className={styles.searchResults}>
             {
-              searchResults.map(pkm => (
-                <li
-                  key={pkm.name}
-                  className={styles.searchResult}
-                >
-                  <Link
-                    href={`/pokemon/${pkm.name}`}
-                    style={{ textDecoration: 'none', color: '#000', display: 'block' }}
+              searchResults.length === 0
+                ? <li className={styles.searchResult}>Pokemon Not Found</li>
+                : searchResults.map(pkm => (
+                  <li
+                    key={pkm.name}
+                    className={styles.searchResult}
                   >
-                    {pkm.name}
-                  </Link>
-                </li>
-              ))
+                    <Link
+                      href={`/pokemon/${pkm.name}`}
+                      style={{ textDecoration: 'none', color: '#000', display: 'block' }}
+                    >
+                      {pkm.name}
+                    </Link>
+                  </li>
+                ))
             }
           </ul>
         </div>
