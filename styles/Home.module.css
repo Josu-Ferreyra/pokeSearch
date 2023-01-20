@@ -59,7 +59,7 @@
 }
 .search {
   background-color: transparent;
-  color: #222;
+  color: var(--clr-yellow-400);
   font-weight: bold;
   text-transform: capitalize;
   outline: none;

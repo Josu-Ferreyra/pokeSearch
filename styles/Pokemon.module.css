@@ -1,0 +1,113 @@
+.pkmContainer {
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+  background-color: var(--clr-yellow-200);
+  font-size: 16px; /* 1em = 16px */
+  padding-top: 5rem; /* = height del Header*/
+}
+.imageContainer {
+  margin: 0 2em;
+  background: linear-gradient(75deg, #000, #333);
+  border-radius: 50%;
+}
+.imageContainer img {
+  filter: drop-shadow(.25em .5em 0em rgba(0,0,0,.1));
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  object-fit: contain;
+  object-position: center;
+}
+@media screen and (min-width: 425px) {
+  .imageContainer{
+    max-width: 425px;
+  }
+}
+.shinyBtn {
+  margin: 1em auto 0 auto; /* 1 * 16px = 16px */
+  background-color: transparent;
+  border: .25em solid #222; /* .25 * 16px = 4px */
+  border-radius: .5em; /* .5 * 16px = 8px */
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pkmName {
+  font-size: 2em; /* 1em = 2 * 16px = 32px */
+  font-family: var(--pkm-font);
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.0625em; /* .0625 * 32px = 2px */
+  margin: .5em; /* .5 * 32px = 16px */
+  padding: .125em; /* .125 * 32px = 4px */
+  
+  background-color: #222;
+  box-shadow: 0em .125em .125em #000; /* .125 * 32px = 4px*/
+  color: var(--clr-yellow-200);
+}
+.description {
+  text-align: center;
+  margin: 0 .5em 2em .5em;
+  color: #222;
+  font-weight: bold;
+}
+.typesContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 2em;
+  gap: 2em;
+}
+.type {
+  background-color: transparent;
+  box-shadow: -.25em .25em 0em 0em var(--clr);
+  border: .25em solid var(--clr);
+  color: var(--clr);
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+
+  flex-grow: 1;
+  padding: 1em; /* 1 * 16px = 16px */
+  max-width: 5em; /* 5 * 16px = 80px*/
+  border-radius: 2em;
+}
+.abilitiesContainer {
+  background-color: #222;
+  box-shadow: 0em .25em .25em #000; /* .25 * 16px = 4px*/
+
+  margin: 2em 1em;
+}
+
+.abilitiesTitle {
+  font-family: var(--pkm-font);
+  font-weight: normal;
+  font-size: 2em; /* 1em = 2 * 16px = 32px*/
+  letter-spacing: 0.0625em; /* .0625 * 32px = 2px */
+  margin: 0;
+  color: var(--clr-yellow-200);
+  
+  text-align: center;
+  text-transform: uppercase;
+}
+.ability {
+  text-align: center;
+  background-color: var(--clr-yellow-200);
+  color: #222;
+  margin: 0 1em 2em 1em; /* 1 * 16px = 16px & 2 * 16px = 32px */
+}
+.ability h3 {
+  font-size: 1.5em; /* 1.5 * 16px = 24px */
+  margin: 0;
+  text-transform: capitalize;
+}
+.hiddenAbility {
+  font-size: .75em; /* .75 * 16px = 12px */
+  background-color: var(--clr-yellow-400);
+  font-weight: bold;
+  margin: 0;
+}
+.abilityEffect {
+  margin: .5em;
+}
