@@ -7,7 +7,8 @@
   --clr-yellow-200: hsl(48, 100%, 65%);
   --clr-yellow-400: hsl(48, 100%, 51%);
 
-  --clr-blue-400: #2f6eb6;
+  --clr-blue-200: hsl(212, 59%, 65%);
+  --clr-blue-400: hsl(212, 59%, 45%);
 
   --clr-red-400: #fc1b1b;
 
@@ -50,4 +51,19 @@ p, h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+}
+
+/* Repetitive Styles */
+.container {
+  margin: 1em;
+  border: .125em solid #222;
+  box-shadow: -.25em .25em 0 0 #222;
+}
+.title {
+  margin: 0;
+  text-align: center;
+  font-size: 2em; /* 1em = 16 * 2 = 32px */
+  letter-spacing: 0.0625em; /* .0625 * 32px = 2px */
+  border-bottom: .0625em solid #222; /* .0625 * 32px = 2px */
+  font-family: var(--pkm-font);
 }
