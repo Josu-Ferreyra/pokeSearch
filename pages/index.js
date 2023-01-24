@@ -48,7 +48,7 @@ export default function Home () {
                     className={styles.searchResult}
                   >
                     <Link
-                      href={`/pokemon/${pkm.name}`}
+                      href={`/pokemon/${pkm.name}/${pkm.url.split('/')[6]}`}
                       style={{ textDecoration: 'none', color: '#000', display: 'block' }}
                     >
                       {pkm.name}
