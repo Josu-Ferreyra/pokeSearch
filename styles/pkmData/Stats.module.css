@@ -1,0 +1,19 @@
+.stat {
+  border: .125em solid #222;
+  margin: 1em auto;
+  text-align: center;
+  width: 180px;
+}
+.stat p {
+  margin: 0;
+  font-weight: bold;
+}
+.statName {
+  background-color: #222;
+  color: var(--clr-yellow-200);
+  text-transform: capitalize;
+}
+.statValue {
+  background-color: var(--statColor);
+  color: #000;
+}

@@ -1,0 +1,28 @@
+.imageContainer {
+  margin: 0 2em;
+  background: linear-gradient(75deg, #000, #333);
+  border-radius: 50%;
+}
+.imageContainer img {
+  filter: drop-shadow(.25em .5em 0em rgba(0,0,0,.1));
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  object-fit: contain;
+  object-position: center;
+}
+@media screen and (min-width: 425px) {
+  .imageContainer{
+    max-width: 425px;
+  }
+}
+.shinyBtn {
+  display: block;
+  margin: 1em auto 0 auto; /* 1 * 16px = 16px */
+  background-color: transparent;
+  border: .25em solid #222; /* .25 * 16px = 4px */
+  border-radius: .5em; /* .5 * 16px = 8px */
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+}

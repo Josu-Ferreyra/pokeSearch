@@ -1,0 +1,22 @@
+.varietyBtn {
+  width: 75vw;
+  max-width: 400px;
+
+  display: block;
+  background-color: var(--clr-yellow-400);
+  margin: 1em auto;
+  padding: .5em;
+  border: .125em solid #222;
+  text-transform: capitalize;
+
+  transition: background 200ms ease, box-shadow 250ms ease;
+}
+.varietyBtn:hover {
+  background-color: var(--clr-yellow-200);
+  box-shadow: -.2em .2em 0 0 #222;
+  cursor: pointer;
+}
+.varietyLink {
+  text-decoration: none;
+  color: #222;
+}

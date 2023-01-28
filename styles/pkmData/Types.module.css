@@ -1,0 +1,20 @@
+.typesContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 2em;
+  gap: 2em;
+}
+.type {
+  background-color: transparent;
+  box-shadow: -.25em .25em 0em 0em var(--clr);
+  border: .25em solid var(--clr);
+  color: var(--clr);
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+
+  flex-grow: 1;
+  padding: 1em; /* 1 * 16px = 16px */
+  max-width: 5em; /* 5 * 16px = 80px*/
+  border-radius: 2em;
+}
