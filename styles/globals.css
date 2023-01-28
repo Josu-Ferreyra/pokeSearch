@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 @font-face {
   font-family: Pokemon;
-  src: url('../fonts/PocketMonk-15ze.ttf');
+  src: url('/public/fonts/PocketMonk-15ze.ttf');
 }
 :root {
   --clr-yellow-200: hsl(48, 100%, 65%);
