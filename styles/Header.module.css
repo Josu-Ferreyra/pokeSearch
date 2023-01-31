@@ -14,17 +14,6 @@
   font-family: var(--pkm-font);
   color: #222;
   text-decoration: none;
-  font-size: 2.5em; /* 2.5 * 16px = 40px */
+  font-size: clamp(75%, 2.5em, 20vw);
   font-weight: bold;
 }
-
-/* .navbar ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.navbar a {
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--clr-yellow-400);
-} */

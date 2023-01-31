@@ -1,10 +1,12 @@
 .footerContainer {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
+  padding: 1rem 10%;
+  height: 100%;
   background-color: #111;
+}
+.footerContainer p {
+  font-size: clamp(8px, 1vw, 32px);
+  text-align: center;
   color: var(--clr-yellow-400);
-  overflow: hidden;
 }
 .footerContainer a {
   text-decoration: none;

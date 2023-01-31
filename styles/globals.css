@@ -5,7 +5,7 @@
 }
 :root {
   --clr-yellow-200: hsl(48, 100%, 65%);
-  --clr-yellow-400: hsl(48, 100%, 51%);
+  --clr-yellow-400: hsl(48, 100%, 50%);
 
   --clr-blue-200: hsl(212, 59%, 65%);
   --clr-blue-400: hsl(212, 59%, 45%);
@@ -18,6 +18,15 @@
 /* CSS RESET */
 * {
   font-family: var(--classic-font);
+  scrollbar-width: thin;
+  scrollbar-color: var(--clr-yellow-200) transparent;
+}
+*::-webkit-scrollbar{
+  background-color: transparent;
+  width: 3px;
+}
+*::-webkit-scrollbar-thumb{
+  background-color: var(--clr-yellow-200);
 }
 html {
   font-size: 16px;
@@ -26,6 +35,7 @@ body {
   margin: 0;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #222;
 }
 /*
   6. Improve media defaults
@@ -55,9 +65,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Repetitive Styles */
 .container {
-  margin: 1em;
+  margin: 1em 0;
   border: .125em solid #222;
   box-shadow: -.25em .25em 0 0 #222;
+  width: 100%;
+  max-width: 40rem;
 }
 .title {
   margin: 0;

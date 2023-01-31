@@ -1,10 +1,14 @@
 .pkmContainer {
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   background-color: var(--clr-yellow-200);
-  font-size: 16px; /* 1em = 16px */
-  padding-top: 5rem; /* = height del Header*/
+
+  font-size: clamp(2px, 3vw, 32px); /* 1em = 16px */
+  
+  padding: 5rem 5% 1rem 5%; /* 5rem = height del Header*/
 }
 
 .pkmName {
@@ -16,13 +20,27 @@
   margin: .5em; /* .5 * 32px = 16px */
   padding: .125em; /* .125 * 32px = 4px */
   
+  width: 100%;
+  max-width: 40rem;
+  
   background-color: #222;
   box-shadow: 0em .125em .125em #000; /* .125 * 32px = 4px*/
   color: var(--clr-yellow-200);
 }
 .description {
   text-align: center;
-  margin: 0 .5em 2em .5em;
   color: #222;
   font-weight: bold;
+}
+
+@media (min-width: 425px) {
+  .pkmContainer {
+    font-size: clamp(16px, 1vw, 32px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pkmContainer {
+    padding: 5rem 25%;
+  }
 }

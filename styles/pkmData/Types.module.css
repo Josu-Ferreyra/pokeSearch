@@ -16,5 +16,6 @@
   flex-grow: 1;
   padding: 1em; /* 1 * 16px = 16px */
   max-width: 5em; /* 5 * 16px = 80px*/
+  min-width: fit-content;
   border-radius: 2em;
 }

@@ -3,6 +3,7 @@
   margin: 1em auto;
   text-align: center;
   width: 180px;
+  max-width: 90%;
 }
 .stat p {
   margin: 0;

@@ -16,6 +16,7 @@
   font-weight: bold;
 
   background-color: var(--clr-yellow-400);
+  cursor: pointer;
 }
 .toggleBtn[data-color='false'] {
   background-color: var(--clr-yellow-200);

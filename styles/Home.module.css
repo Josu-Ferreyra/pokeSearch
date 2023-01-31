@@ -140,3 +140,9 @@
     --searchWidth: 400px;
   }
 }
+
+@media (max-width: 300px) {
+  .title {
+    font-size: clamp(8px, 28vw, 80px);
+  }
+}

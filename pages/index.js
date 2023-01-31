@@ -16,9 +16,12 @@ export default function Home () {
   return (
     <main>
       <Head>
+        <meta lang='en' />
         <title>PokeSearch</title>
         <meta name='description' content='Pokemon App' />
         <link rel='icon' href='/favicon.ico' />
+        <link rel='manifest' href='/site.webmanifest' />
+        <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
       </Head>
 
       <div className={styles.container}>
