@@ -11,12 +11,13 @@
 }
 
 .toggleBtn {
+  cursor: pointer;
+  
   width: 100%;
   border: none;
   font-weight: bold;
 
   background-color: var(--clr-yellow-400);
-  cursor: pointer;
 }
 .toggleBtn[data-color='false'] {
   background-color: var(--clr-yellow-200);
