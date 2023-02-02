@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
@@ -23,6 +24,22 @@ export default function Home () {
         <link rel='manifest' href='/site.webmanifest' />
         <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
       </Head>
+
+      {/* GOOGLE ANALYTICS */}
+      <Script
+        src='https://www.googletagmanager.com/gtag/js?id=G-YD9941KNLV'
+        strategy='afterInteractive'
+      />
+      <Script id='google-analytics' strategy='afterInteractive'>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-YD9941KNLV');
+        `}
+
+      </Script>
 
       <div className={styles.container}>
         <h1 className={styles.title}>
